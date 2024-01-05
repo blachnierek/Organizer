@@ -1,0 +1,9 @@
+Projekt dotyczy stworzenia osobistego organizera. Aplikacja składać się będzie z pomniejszych aplikacji dzięki czemu
+nie zamyka się na paru głównych założeniach i daje możliwość na dodawanie ich w razie potrzeby w przyszłości. Aplikacja ma pomóc uporządkować
+wiele rzeczy którym by się owe uporządkowanie przydało. Aplikacje które w początkowych założeniach będę realizować to: Baza 
+posiadanych przeze mnie hotwheelsów, Organizer finansów, (zapożyczone od Emiliana, niemniej przydatne) dziennik postępów na siłowni,
+urozmaicony przez zbieranie danych o wadze, wzroście i sylwetce. Jak można zauważyć powyższy tekst przybiera luźną formę dziennika
+i dołożę starań by tak zostało. W tym pliku nadpisywane będą też postępy mojej pracy, z dwóch powodów. W celu uporządkowania
+cyklu pracy i wiedzy oraz jako że to pierwszy projekt tego typu spodziewam się że poza samym pisaniem kodu część czasu będę musiał poświecić
+na douczanie się i zrozumienie jak dotąd nie znanych mi pojęć czy rozwiązań co za tym idzie dzięki aktualizowaniu repozytorium przez commity 
+chociażby aktualizując owy plik widoczne będą postępy w kwesti ruszenia projektu i pomogą mi zetrzeć się z ustaloną presją 4ch commitów tygodniowo.
