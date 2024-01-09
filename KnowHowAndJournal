@@ -15,11 +15,12 @@ zastanowić się jak ma wyglądać baza danych i zrobić jej projekt.
 Strona do modelowania bazy danych: dbdiagram.io/d
 
 Table car {
-  id integer [primary key]
+  id varchar [primary key]
   toy varchar
   name varchar
   th checkbox
   sth checkbox
+  photo image
 }
 
 Table year {
