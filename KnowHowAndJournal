@@ -12,3 +12,32 @@ chociażby aktualizując owy plik widoczne będą postępy w kwesti ruszenia pro
 Zacznę od bazy danych hotwheelsów, gdy będzie ukończona w planach jest dodanie menu dzięki któremu będę mógł przełączać się między
 innymi aplikacjami więc da to podstawkę i wygodę pod stworzenie innych aplikacji. Zainstalowałem postgresa, plan na dziś żeby
 zastanowić się jak ma wyglądać baza danych i zrobić jej projekt.
+Strona do modelowania bazy danych: dbdiagram.io/d
+
+Table car {
+  id integer [primary key]
+  toy varchar
+  name varchar
+  th checkbox
+  sth checkbox
+}
+
+Table year {
+  id integer [primary key]
+  year integer
+}
+
+Table collection {
+  id integer [primary key]
+  collection varchar
+}
+
+Table brand {
+  id integer [primary key]
+  brand varchar
+}
+
+Table series {
+  id integer [primary key]
+  series varchar
+}
