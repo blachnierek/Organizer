@@ -12,6 +12,7 @@ chociażby aktualizując owy plik widoczne będą postępy w kwesti ruszenia pro
 Zacznę od bazy danych hotwheelsów, gdy będzie ukończona w planach jest dodanie menu dzięki któremu będę mógł przełączać się między
 innymi aplikacjami więc da to podstawkę i wygodę pod stworzenie innych aplikacji. Zainstalowałem postgresa, plan na dziś żeby
 zastanowić się jak ma wyglądać baza danych i zrobić jej projekt.
+
 Strona do modelowania bazy danych: dbdiagram.io/d
 
 Table car {
@@ -24,21 +25,41 @@ Table car {
 }
 
 Table year {
-  id integer [primary key]
+  id integer
   year integer
 }
 
 Table collection {
-  id integer [primary key]
+  id integer
   collection varchar
 }
 
 Table brand {
-  id integer [primary key]
+  id integer
   brand varchar
 }
 
 Table series {
-  id integer [primary key]
+  id integer
   series varchar
 }
+
+Ref: car.id > year.id
+Ref: car.id > collection.id
+Ref: car.id > brand.id
+Ref: car.id > series.id
+
+
+10.1.2024
+Zainstalowałem postgresa, miałem problem z odpaleniem go w terminalu bo nie rozpoznawało komend jednak dodanie
+zmiennej środowiskowej do postgresa pomogło.
+ Dodanie zdjęć generuje problem z uwagi że nie powinno się dodawać ich do bazy danych a przynajmniej nie jako typ jendej z kolumn.
+
+
+CREATE TABLE public.car(
+"id" varchar primary key NOT NULL,
+"toy" varchar NOT NULL,
+"name" varchar NOT NULL,
+"th" boolean NOT NULL,
+"sth" boolean
+);
