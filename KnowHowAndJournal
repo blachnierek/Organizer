@@ -56,10 +56,38 @@ zmiennej środowiskowej do postgresa pomogło.
  Dodanie zdjęć generuje problem z uwagi że nie powinno się dodawać ich do bazy danych a przynajmniej nie jako typ jendej z kolumn.
 
 
-CREATE TABLE public.car(
+
+
+11.1.2024
+Po rozważeniu pomysłów rozwiązania problemu ze zdjęciem są dwa roziązania, Pierwsze łatwiejsze osadzić zdjęcia na google drive i do bazy wrzucać linki tylko linki na które
+się zdecyduję, jest eż drugi pomysł być może w przyszłości żeby zapisywać lokalnie zdjęcia dodają je w formularzu, dodając nowe auto i żeby zdjęcie zapisywało się z nazwą indexu
+ danego auta i wyświetlać zdjęcie które jest równe z idexem auta które wywołuje z bazy.
+
+ CREATE TABLE public.car(
 "id" varchar primary key NOT NULL,
 "toy" varchar NOT NULL,
 "name" varchar NOT NULL,
 "th" boolean NOT NULL,
-"sth" boolean
+"sth" boolean,
+"image" varchar
+);
+
+CREATE TABLE public.year(
+"id" varchar NOT NULL,
+"year" integer NOT NULL
+);
+ 
+CREATE TABLE public.collection(
+"id" varchar NOT NULL,
+"collection" VARCHAR NOT NULL
+);
+
+CREATE TABLE public.brand(
+"id" varchar NOT NULL,
+"brand" VARCHAR NOT NULL
+);
+
+CREATE TABLE public.series(
+"id" varchar NOT NULL,
+"series" VARCHAR NOT NULL
 );
