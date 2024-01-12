@@ -91,3 +91,8 @@ CREATE TABLE public.series(
 "id" varchar NOT NULL,
 "series" VARCHAR NOT NULL
 );
+
+12.1.2024
+Po rozeznaniu się w temacie technologii wykorzystywanych w projekcie zdecydowałem się na Jsnod dzięki temu będę używać JSa 
+i na front i back endie i ominę obsranego gówienkiem z dupy php. a dzięki temu pokontynuuję naukę JSa w praktyce. do komunikacji 
+z postgresem wykorzystan framework do node "Express".
