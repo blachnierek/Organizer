@@ -93,6 +93,12 @@ CREATE TABLE public.series(
 );
 
 12.1.2024
-Po rozeznaniu się w temacie technologii wykorzystywanych w projekcie zdecydowałem się na Jsnod dzięki temu będę używać JSa 
-i na front i back endie i ominę obsranego gówienkiem z dupy php. a dzięki temu pokontynuuję naukę JSa w praktyce. do komunikacji 
+Po rozeznaniu się w temacie technologii wykorzystywanych w projekcie zdecydowałem się na Jsnode dzięki temu będę używać JSa 
+i na front i back endie i ominę obsranego gównem z dupy php. a dzięki temu pokontynuuję naukę JSa w praktyce. do komunikacji 
 z postgresem wykorzystan framework do node "Express".
+
+16.1.2024
+Opanierowałem poradnik jsnoda i expresa, zacznę od instalacji.
+npm init  - instalacja node
+npm install express - instalacja expressa
+node index.js - odpalenie serwera
