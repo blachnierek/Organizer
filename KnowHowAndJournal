@@ -65,7 +65,6 @@ się zdecyduję, jest eż drugi pomysł być może w przyszłości żeby zapisyw
 
  CREATE TABLE public.car(
 "id" varchar primary key NOT NULL,
-"toy" varchar NOT NULL,
 "name" varchar NOT NULL,
 "th" boolean NOT NULL,
 "sth" boolean,
@@ -77,10 +76,6 @@ CREATE TABLE public.year(
 "year" integer NOT NULL
 );
  
-CREATE TABLE public.collection(
-"id" varchar NOT NULL,
-"collection" VARCHAR NOT NULL
-);
 
 CREATE TABLE public.brand(
 "id" varchar NOT NULL,

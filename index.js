@@ -5,6 +5,9 @@ app.listen(8888, () =>{
 console.log('Aplikacja wystartowała');
 });
 
+app.use(express.static('static'));
+
 app.get('/', (req, res) => {
-    res.send('Działa');
+    res.redirect(302, '/hotwheels.html');
 });
+
