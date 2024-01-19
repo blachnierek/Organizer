@@ -97,3 +97,9 @@ Opanierowałem poradnik jsnoda i expresa, zacznę od instalacji.
 npm init  - instalacja node
 npm install express - instalacja expressa
 node index.js - odpalenie serwera
+
+19.1.2024
+Aktualnie front działa już na serwerze lokalnym i przekierowuje z http://127.0.0.1:8888 na http://127.0.0.1:8888/hotwheels.html
+W przyszłości będzie startować na głównej ale jako że hotwheels to tylko jedna z aplikacji to dla wygody przekierowuje automatycznie.
+Podłączenie expressa z postgresem.
+npm install pg - instalacja paczek do postgresa
