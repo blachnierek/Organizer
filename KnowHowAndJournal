@@ -63,28 +63,34 @@ Po rozważeniu pomysłów rozwiązania problemu ze zdjęciem są dwa roziązania
 się zdecyduję, jest eż drugi pomysł być może w przyszłości żeby zapisywać lokalnie zdjęcia dodają je w formularzu, dodając nowe auto i żeby zdjęcie zapisywało się z nazwą indexu
  danego auta i wyświetlać zdjęcie które jest równe z idexem auta które wywołuje z bazy.
 
- CREATE TABLE public.car(
-"id" varchar primary key NOT NULL,
-"name" varchar NOT NULL,
-"th" boolean NOT NULL,
-"sth" boolean,
-"image" varchar
+-- Tabela car
+CREATE TABLE car (
+    toy SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    th BOOLEAN,
+    sth BOOLEAN,
+    image VARCHAR(255),
+    brand_id INT REFERENCES brand (id),
+    year_id INT REFERENCES year (id),
+    series_id INT REFERENCES series (id)
 );
 
-CREATE TABLE public.year(
-"id" varchar NOT NULL,
-"year" integer NOT NULL
-);
- 
-
-CREATE TABLE public.brand(
-"id" varchar NOT NULL,
-"brand" VARCHAR NOT NULL
+-- Tabela brand
+CREATE TABLE brand (
+    id SERIAL PRIMARY KEY,
+    brand VARCHAR(255)
 );
 
-CREATE TABLE public.series(
-"id" varchar NOT NULL,
-"series" VARCHAR NOT NULL
+-- Tabela year
+CREATE TABLE year (
+    id SERIAL PRIMARY KEY,
+    year INT
+);
+
+-- Tabela series
+CREATE TABLE series (
+    id SERIAL PRIMARY KEY,
+    series VARCHAR(255)
 );
 
 12.1.2024
@@ -103,3 +109,11 @@ Aktualnie front działa już na serwerze lokalnym i przekierowuje z http://127.0
 W przyszłości będzie startować na głównej ale jako że hotwheels to tylko jedna z aplikacji to dla wygody przekierowuje automatycznie.
 Podłączenie expressa z postgresem.
 npm install pg - instalacja paczek do postgresa
+Baza danych podłączona.
+
+ 20.1.2024
+ Sporo przeczytałem, przedewszystkim baza danych wymagała aktualizacji o parę kolumn. Aktualnie borykam się z problemem dodania nowego hotwheelsa do bazy danych 
+ przez formularz we frontendzie. Musiałem zainstalować moduł dzięki któremu sparsuje dane z formularza. 
+ npm install express body-parser
+ Jak się okazuje parę tabel w bazie danych może znacznie utrudnić cały kod i zagmatwać go z uwagi na fakt że w formularzu mam rok, markę i serię do wpisania a nie ich ID 
+co generuje sporo problemów. Muszę rozważyć czy nie ograniczyć bazy danych do pojedyńczej tabeli.

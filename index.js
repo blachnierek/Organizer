@@ -1,11 +1,9 @@
 const express = require("express");
 const app = express();
 const db = require('./db.js');
+const bodyParser = require('body-parser');
 
-app.listen(8888, () =>{
-console.log('Aplikacja wystartowała');
-});
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('static'));
 
 app.get('/', async (req, res) => {
@@ -14,3 +12,8 @@ app.get('/', async (req, res) => {
     res.json(result.rows);
 });
 
+
+
+app.listen(8888, () =>{
+    console.log('Aplikacja wystartowała');
+    });
