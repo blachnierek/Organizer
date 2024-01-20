@@ -7,9 +7,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('static'));
 
 app.get('/', async (req, res) => {
-    //res.redirect(302, '/hotwheels.html');
-    const result = await db.query('SELECT * FROM car');
-    res.json(result.rows);
+    res.redirect(302, '/hotwheels.html');
+    //const result = await db.query('SELECT * FROM car'); wyświetlenie wszystkich pozycji z tabeli car
+    //res.json(result.rows);
 });
 
 

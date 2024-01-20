@@ -117,3 +117,16 @@ Baza danych podłączona.
  npm install express body-parser
  Jak się okazuje parę tabel w bazie danych może znacznie utrudnić cały kod i zagmatwać go z uwagi na fakt że w formularzu mam rok, markę i serię do wpisania a nie ich ID 
 co generuje sporo problemów. Muszę rozważyć czy nie ograniczyć bazy danych do pojedyńczej tabeli.
+
+CREATE TABLE car (
+    toy VARCHAR(255),
+    name VARCHAR(255),
+    image VARCHAR(255),
+    brand VARCHAR(255),
+    year integer,
+    series VARCHAR(255),
+    th BOOLEAN,
+    sth BOOLEAN
+);
+
+ INSERT INTO car values ('HKG81', '89 Mazda Savanna RX-7 FC3S', 'https://static.wikia.nocookie.net/hotwheels/images/0/06/HW-2023-051-1-HKG81-89_Mazda_Savanna_RX-7_FC3S.png/revision/latest?cb=20221116111436', 'mazda', 2023, '	HW: The 80s', false, false)
