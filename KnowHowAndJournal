@@ -129,4 +129,11 @@ CREATE TABLE car (
     sth BOOLEAN
 );
 
- INSERT INTO car values ('HKG81', '89 Mazda Savanna RX-7 FC3S', 'https://static.wikia.nocookie.net/hotwheels/images/0/06/HW-2023-051-1-HKG81-89_Mazda_Savanna_RX-7_FC3S.png/revision/latest?cb=20221116111436', 'mazda', 2023, '	HW: The 80s', false, false)
+INSERT INTO car values ('HKG81', '89 Mazda Savanna RX-7 FC3S', 'https://static.wikia.nocookie.net/hotwheels/images/0/06/HW-2023-051-1-HKG81-89_Mazda_Savanna_RX-7_FC3S.png/revision/latest?cb=20221116111436', 'mazda', 2023, '	HW: The 80s', false, false)
+
+22.1.2024
+W pierwszej kolejności spróbuje wyświetlić dane z bazy danych na stronie html a nie jak udało się to wcześniej poprzez
+wyświetlenie jsona zamiast strony.
+Do tego będzie potrzebny moduł ejs. Pozwala na osadzanie fragmentów JSa w htmlu.
+npm install ejs
+Żeby widoki (hotwheels i dodaj altualnie) obsługiwały silnik ejs potrzebna jest zmiana z hotwheels.html na hotwaheels.ejs
