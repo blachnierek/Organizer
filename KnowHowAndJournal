@@ -137,3 +137,11 @@ wyświetlenie jsona zamiast strony.
 Do tego będzie potrzebny moduł ejs. Pozwala na osadzanie fragmentów JSa w htmlu.
 npm install ejs
 Żeby widoki (hotwheels i dodaj altualnie) obsługiwały silnik ejs potrzebna jest zmiana z hotwheels.html na hotwaheels.ejs
+Aktualnie udało się wyświetlić w formie listy auta z bazy danych.
+Problem pojawił się z przekierowywaniami na strony i z wyświetleniem zdjęcia.
+
+24.1.2024
+Instalacja paczki nodemon dzięki której nie trzeba każdorazowo restartować serwera przy zmianach
+npm install nodemon
+Uruchomienie:
+npm run start

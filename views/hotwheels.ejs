@@ -12,8 +12,9 @@
   </head>
   <body>
     <h1>Baza Hotwheelsów</h1><br><br>
-    <a href="./dodaj.ejs" type="button" class="btn btn-primary">Dodaj nowego Hotwheelsa</a>
-    <a href="./hotwheels.ejs" type="button" class="btn btn-primary">Strona główna</a><br><br>
+    <a href="./hotwheels.ejs" type="button" class="btn btn-primary">Strona główna</a>
+    <a href="./dodaj.ejs" type="button" class="btn btn-primary">Dodaj nowego Hotwheelsa</a><br><br>
+
     <ul>
       <% cars.forEach(car => { %>
         <li><%= car.toy %> - <%= car.name %> - <%= car.brand %> - <%= car.year %> - <%= car.series %> - <img src="/HKG81.jpg" alt=''></li>
