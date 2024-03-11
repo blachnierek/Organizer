@@ -145,3 +145,7 @@ Instalacja paczki nodemon dzięki której nie trzeba każdorazowo restartować s
 npm install nodemon
 Uruchomienie:
 npm run start
+
+
+11.03.2024
+Git commit test
